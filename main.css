@@ -64,7 +64,6 @@ header nav ul li a {
 }
 
 header nav ul li:not(.active):not(.btn) a:hover {
-    /* border-bottom: 5px solid #DC7000; */
     color: #DC7000;
     transition: 0.5s;
 }
@@ -185,6 +184,46 @@ header nav ul li.active::after{
     margin-right: 7px;
 }
 
+.trending .games .game_1 {
+    position: relative;
+    right: 25px;
+}
+
+.trending .games .follow_1 {
+    position: relative;
+    right: 40px;
+}
+
+.trending .games .game_2 {
+    position: relative;
+    right: 9px;
+}
+
+.trending .games .follow_2 {
+    position: relative;
+    right: 30px;
+}
+
+.trending .games .game_3 {
+    position: relative;
+    left: 9px;
+}
+
+.trending .games .follow_3 {
+    position: relative;
+    right: 5px;
+}
+
+.trending .games .game_4 {
+    position: relative;
+    left: 25px;
+}
+
+.trending .games .follow_4 {
+    position: relative;
+    left: 10px;
+}
+
 .big-text {
     font-size: 35px;
     padding: 50px 0;
@@ -288,6 +327,118 @@ header nav ul li.active::after{
 
 .projects .see-all:hover {
     transform: scale(1.1);
+}
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block {
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 280px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -97px;
+    z-index: 1;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button {
+    background: #FA9021;
+    padding: 13px 17px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.email .block button:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+footer {
+    background: black;
+    padding: 50px 0;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .block .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+footer .block p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .block h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .block ul {
+    list-style: none;
+}
+
+footer .block ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: white;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 13px;
 }
 
 
