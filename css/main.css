@@ -1,0 +1,1246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    background: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+/* обращение к списку */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+/* обращение к каждому элементу */
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    color: #DC7000;
+    transition: 0.5s;
+}
+
+/* кнопка */
+header nav ul li.btn a {
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header nav ul li.btn a:hover {
+    background: black;
+}
+
+/* класс active */
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+/* текст */
+.hero--info {
+    width: 527px;
+    padding-top: 70px;
+}
+
+.hero--info h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #E87D0E;
+}
+
+.hero--info h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn {
+    background: #FA8305;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: -140px;
+    right: -140px;
+    width: 650px;
+}
+
+/* игры */
+.trending h3 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.trending .see-all {
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.trending .see-all:hover {
+    transform: scale(1.1);
+}
+
+.trending {
+    padding-top: 50px;
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .games span span {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.trending .games .game_1 {
+    position: relative;
+    right: 25px;
+}
+
+.trending .games .follow_1 {
+    position: relative;
+    right: 40px;
+}
+
+.trending .games .game_2 {
+    position: relative;
+    right: 9px;
+}
+
+.trending .games .follow_2 {
+    position: relative;
+    right: 30px;
+}
+
+.trending .games .game_3 {
+    position: relative;
+    left: 9px;
+}
+
+.trending .games .follow_3 {
+    position: relative;
+    right: 5px;
+}
+
+.trending .games .game_4 {
+    position: relative;
+    left: 25px;
+}
+
+.trending .games .follow_4 {
+    position: relative;
+    left: 10px;
+}
+
+.big-text {
+    font-size: 35px;
+    padding: 50px 0;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.features {
+    background: url('/css/images/Background_1.png') no-repeat center center fixed;
+    padding: 80px 0;
+}
+
+.features h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 826px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.features p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 826px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img {
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p {
+    font-size: 14px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all {
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: none;
+    display: block;
+    transition: all 0.5s ease;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.projects .see-all:hover {
+    transform: scale(1.1);
+}
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block {
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 280px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -97px;
+    z-index: 1;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button {
+    background: #FA9021;
+    padding: 13px 17px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.email .block button:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+footer {
+    background: black;
+    padding: 50px 0;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .block .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+footer .block p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .block h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .block ul {
+    list-style: none;
+}
+
+footer .block ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: white;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* страница about us */
+.hero-about {
+    position: relative;
+}
+
+.hero-about .info {
+    width: 380px;
+    padding: 150px 0;
+}
+
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info p {
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.hero-about .info .btn {
+    background: #FA8305;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 0.5s ease;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.hero-about .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero-about img {
+    position: absolute;
+    right: -90px;
+    top: 0;
+    width: 600px;
+}
+
+.work {
+    padding: 80px 0;
+}
+
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1C140F;
+}
+
+.work .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.work .blocks .block .badge.purple {
+    background: #4B0082;
+}
+
+.work .blocks .block .badge.brown {
+    background: #8B4513;
+}
+
+.work .blocks .block .badge.green {
+    background: #006400;
+}
+
+.work .blocks .block p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Services */
+.hero-services {
+    position: relative;
+}
+
+.hero-services .information {
+    padding: 50px 0;
+    width: 950px;
+}
+
+.hero-services .information h1 {
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hero-services .information p {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.more-services-1 {
+    position: relative;
+}
+
+.more-services-1 .sale {
+    width: 450px;
+    padding: 100px 0;
+}
+
+.more-services-1 .sale h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.more-services-1 .sale p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.more-services-1 .sale .btn {
+    background: #DC7000;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.more-services-1 .sale .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.more-services-1 img {
+    position: absolute;
+    right: -30px;
+    top: 80px;
+    width: 410px;
+}
+
+.more-services-2 .support {
+    width: 450px;
+    padding: 100px 0;
+    right: -620px;
+    position: relative;
+}
+
+.more-services-2 .support h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.more-services-2 .support p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.more-services-2 .support .btn {
+    background: #DC7000;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.more-services-2 .support .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.more-services-2 img {
+    position: absolute;
+    left: -30px;
+    width: 410px;
+    bottom: 620px;
+}
+
+.more-services-3 {
+    position: relative;
+}
+
+.more-services-3 .events {
+    width: 450px;
+    padding: 100px 0;
+}
+
+.more-services-3 .events h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.more-services-3 .events p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.more-services-3 .events .btn {
+    background: #DC7000;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.more-services-3 .events .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.more-services-3 img {
+    position: absolute;
+    right: -30px;
+    top: 80px;
+    width: 410px;
+}
+
+/* News */
+.hero-news {
+    position: relative;
+}
+
+.hero-news .start {
+    padding: 50px 0;
+    width: 980px;
+}
+
+.hero-news .start h1 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.hero-news .start p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Search */
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px 15px;
+    width: 350px;
+    background: #1C140F;
+    position: relative;
+    left: 300px;
+}
+
+.search-container .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.search-container .search-input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    background: #1C140F;
+    color: white;
+}
+
+/* Game news */
+.more-news-1 {
+    position: relative;
+    width: 50%;
+    padding: 80px 50px;
+}
+
+.more-news-1 .news .btn {
+    margin-top: 15px;
+    background: #2351F5;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 150px;
+    border-radius: 5px;
+    transition: all 0.5s ease;    
+}
+
+.more-news-1 .news .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.more-news-1 .news h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.more-news-1 .news p {
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+.splitting {
+    width: 50%;
+    margin-left: 50px;
+    background-color: #A5A5A5;
+    border: 0;
+    height: 1px;
+    margin-top: 40px;
+}
+
+.more-news-2 {
+    position: relative;
+    width: 50%;
+    padding: 80px 50px;
+}
+
+.more-news-2 .news .btn {
+    margin-top: 15px;
+    background: #2351F5;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 150px;
+    border-radius: 5px;
+    transition: all 0.5s ease;    
+}
+
+.more-news-2 .news .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.more-news-2 .news h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.more-news-2 .news p {
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+.more-news-2 img {
+    margin-top: 30px;
+}
+
+.addition-container {
+    position: relative;
+    margin-top: 10px;
+    left: 690px;
+    bottom: 1560px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 550px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.addition-container .block-1 {
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    padding-right: 80px;
+}
+
+.addition-container .block-1 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 205px;
+}
+
+.addition-container .block-1 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-1 p {
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-1 .btn {
+    margin-top: 15px;
+    background: #FF8484;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-1 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.addition-container .block-2 {
+    position: absolute;
+    top: 200px;
+    padding-right: 80px;
+}
+
+.addition-container .block-2 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+.addition-container .block-2 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-2 p {
+    font-size: 13px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-2 .btn {
+    margin-top: 15px;
+    background: #2351F5;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-2 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.addition-container .block-3 {
+    position: absolute;
+    top: 400px;
+    padding-right: 80px;
+}
+
+.addition-container .block-3 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+.addition-container .block-3 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-3 p {
+    font-size: 14px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-3 .btn {
+    margin-top: 15px;
+    background: #FF7C32;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-3 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.addition-container .block-4 {
+    position: absolute;
+    top: 600px;
+    padding-right: 80px;
+}
+
+.addition-container .block-4 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+.addition-container .block-4 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-4 p {
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-4 .btn {
+    margin-top: 15px;
+    background: #2351F5;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-4 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.addition-container .block-5 {
+    position: absolute;
+    top: 800px;
+    padding-right: 80px;
+}
+
+.addition-container .block-5 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+.addition-container .block-5 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-5 p {
+    font-size: 14px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-5 .btn {
+    margin-top: 15px;
+    background: #23A54F;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-5 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.addition-container .block-6 {
+    position: absolute;
+    top: 1000px;
+    padding-right: 80px;
+}
+
+.addition-container .block-6 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+.addition-container .block-6 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-6 p {
+    font-size: 14px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-6 .btn {
+    margin-top: 15px;
+    background: #2351F5;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-6 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.addition-container .block-7 {
+    position: absolute;
+    top: 1200px;
+    padding-right: 80px;
+}
+
+.addition-container .block-7 .text-info {
+    padding-right: 140px;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+.addition-container .block-7 h1 {
+    padding: 20px 0;
+    font-size: 20px;
+    left: 10px;
+}
+
+.addition-container .block-7 p {
+    font-size: 16px;
+    position: relative;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+.addition-container .block-7 .btn {
+    margin-top: 15px;
+    background: #9921C3;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+    width: 130px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 15px;
+}
+
+.addition-container .block-7 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Contacts us */
+.hero-contacts h1 {
+    text-align: center;
+    font-size: 33px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    width: 70%;
+    margin: 80px 15%;
+}
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F; 
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+
+.feedback form textarea {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    padding: 15px 35px;
+    transition: all 0.5s ease;
+    position: relative;
+    right: 9px;
+}
+
+.feedback form button:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
