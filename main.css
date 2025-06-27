@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     color: white;
     font-size: 16px;
+    background: black;
 }
 
 a {
@@ -841,6 +842,7 @@ footer > p {
     font-size: 15px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-1 .btn {
@@ -885,6 +887,7 @@ footer > p {
     font-size: 13px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-2 .btn {
@@ -929,6 +932,7 @@ footer > p {
     font-size: 14px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-3 .btn {
@@ -973,6 +977,7 @@ footer > p {
     font-size: 15px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-4 .btn {
@@ -1017,6 +1022,7 @@ footer > p {
     font-size: 14px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-5 .btn {
@@ -1061,6 +1067,7 @@ footer > p {
     font-size: 14px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-6 .btn {
@@ -1105,6 +1112,7 @@ footer > p {
     font-size: 16px;
     position: relative;
     bottom: 15px;
+    padding-right: 20px;
 }
 
 .addition-container .block-7 .btn {
@@ -1125,6 +1133,108 @@ footer > p {
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/* Contacts us */
+.hero-contacts h1 {
+    text-align: center;
+    font-size: 33px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    width: 70%;
+    margin: 80px 15%;
+}
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F; 
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+
+.feedback form textarea {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    padding: 15px 35px;
+    transition: all 0.5s ease;
+    position: relative;
+    right: 9px;
+}
+
+.feedback form button:hover {
+    transform: scale(1.1);
+}
+
 
 
 
