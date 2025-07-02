@@ -11,6 +11,7 @@ body {
     color: white;
     font-size: 16px;
     background: black;
+    width: 100%;
 }
 
 a {
@@ -757,10 +758,11 @@ footer > p {
 .more-news-1 .news p {
     font-size: 17px;
     padding: 20px 0;
+    margin-right: 20px;
 }
 
 .splitting {
-    width: 50%;
+    width: 47%;
     margin-left: 50px;
     background-color: #A5A5A5;
     border: 0;
@@ -799,6 +801,7 @@ footer > p {
 .more-news-2 .news p {
     font-size: 17px;
     padding: 20px 0;
+    margin-right: 20px;
 }
 
 .more-news-2 img {
@@ -1234,6 +1237,8 @@ footer > p {
 .feedback form button:hover {
     transform: scale(1.1);
 }
+
+
 
 
 
